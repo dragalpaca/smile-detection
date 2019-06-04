@@ -1,10 +1,10 @@
 const video = document.getElementById('video')
 
 Promise.all([
-  faceapi.nets.tinyFaceDetector.loadFromUri('dragalpaca.github.io/smile-detection/models'),
-  faceapi.nets.faceLandmark68Net.loadFromUri('dragalpaca.github.io/smile-detection/models'),
-  faceapi.nets.faceRecognitionNet.loadFromUri('dragalpaca.github.io/smile-detection/models'),
-  faceapi.nets.faceExpressionNet.loadFromUri('dragalpaca.github.io/smile-detection/models')
+  faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
+  faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
+  faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
+  faceapi.nets.faceExpressionNet.loadFromUri('/models')
 ]).then(startVideo)
 
 function startVideo() {
